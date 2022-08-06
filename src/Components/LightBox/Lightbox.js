@@ -26,10 +26,10 @@ const LightBox = () => {
   function checkKey(e) {
     e = e || window.event;
     if (open) {
-      if (e.keyCode == "37") {
+      if (e.keyCode === "37") {
         setPhotoIndex(photoIndex === 0 ? images.length - 1 : photoIndex - 1);
       }
-      if (e.keyCode == "39") {
+      if (e.keyCode === "39") {
         setPhotoIndex(photoIndex === images.length - 1 ? 0 : photoIndex + 1);
       }
     }
