@@ -24,7 +24,7 @@ const RouteArea = () => {
         <Route path="/kyaikto" element={<Cities cities={Data.Kyaikhto} />} />
         <Route path="/bilin" element={<Cities cities={Data.Bilin} />} />
         <Route path="/chaungzon" element={<Cities cities={Data.Chaungzon} />} />
-
+        <Route path="*" element={<Cities cities={Data.Mawlamyine} />} />
         <Route
           path="/kyaikmaraw"
           element={<Cities cities={Data.Kyaikmaraw} />}
